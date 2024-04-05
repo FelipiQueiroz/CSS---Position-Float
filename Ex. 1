@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Barra Lateral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Conteúdo Principal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+    </div>
+</body>
+</html>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #f0f0f0;
+    float: left;
+    position: fixed;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    position: fixed;
+    left: 20%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

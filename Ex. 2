@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Menu Superior, Lateral, Conteúdo e Rodapé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu-superior">
+        <h1>Menu Superior</h1>
+    </header>
+    <aside class="menu-lateral">
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="conteudo">
+        <h1>Conteúdo Principal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+    </main>
+    <footer class="rodape">
+        <p>Rodapé - © 2024</p>
+    </footer>
+</body>
+</html>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-superior {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-lateral {
+    background-color: #f0f0f0;
+    width: 200px;
+    position: fixed;
+    top: 40px;
+    bottom: 40px;
+    left: 0;
+}
+
+.menu-lateral nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral nav ul li {
+    margin: 10px 0;
+}
+
+.menu-lateral nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.conteudo {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
